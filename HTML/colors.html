@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css"> <!--A line added to link the coloring properties in css file-->
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formatting</h1>
+    <h1>Formatting 2</h1>
+    <h1>Formatting</h1>
+
+    <p> this is <strong>important</strong> </p>
+    <!-- tags strong and b works the same but earlier without css it was done to emphasize a word strongly -->
+    <p> this is <i>important</i> </p>
+    <p> this is <em>important</em> </p>
+    <!-- Similar to bold, this is emphasizing something in italic -->
+    
+    <ul>
+        <li>b; strong</li>
+        <li>i; em</li>
+        <li>small</li>
+        <li>sub, sup</li> <!--Subscript and Superscript-->
+        <li>del; mark</li>
+        <!-- Above are some tags that we need to see documentation upon -->
+    </ul>
+    <!-- Above is done with command ul>li*4 where ul is for unordered list, li is for list items and *4 means to list 4 items -->
+
+    <p>H<sub>2</sub>O</p>
+
+    <h3 style="
+    text-align:center; 
+    background-color: #0d00ffa3;
+    color: blueviolet;
+
+    " >This tag needs some styling</h3>
+    <!--Above is a in-line styling tag, not CSS but in HTML-->
+    <!--Such tags are called Global Attributes i.e. can be used with any tags-->
+
+    <!-- background-color support color formats like 
+     hexcode, 
+     rgb -> reg-green-blue, 
+     hsl -> hue-saturation-light, 
+     hwb -> 
+     or you can simply write the color name (not efficient since different browsers define different colors with same name) and it's professional to use hexcodes -->
+
+    <!-- In tags like rgb and hsl, you can concatenate another character with them called a -> Alpha Channel (ranges from 0 to 1 in decimals) that can determine the opacity of the color. Ex- rgba(99,255,133,0.5) , etc. -->
+    
+    <p>
+        <blockquote cite="Elon Musk">
+            this is my quote
+        </blockquote>
+
+        <q>
+            This is my quote
+        </q>
+        <!-- Both above two tags are used for quotation and citations since simply writing them in paragraph (p) tag doesn't optimize them for search engines to find -->
+
+        <abbr title="Hyper Text Marking Language">HTML</abbr>
+        <!-- This is done to write abbreviations -->
+        
+        <address>What to do</address>
+
+        <address>
+            <a href="mailto:jim@example.com">jim@example.com</a><br />
+            <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+        </address>
+
+        <!-- address tag here holds digital addresses like ph no. and email -->
+        <!-- Note: The br i.e. break tag is used without any closing, rather used with a "/" at the end. This is because it's a singleton tag that doesn't require any closing. But to be efficient, we close them with a " /" at the end -->
+
+        <cite>A citation tag</cite><br />
+
+        <bdo dir="rtl">Hitesh</bdo>
+        <!-- This is called a bi-directional tag that is used in 3 modes - auto (recognizes the lang and decides), ltr (left to right) and rtl (right to left). This is done cuz some languages are read from left to right -->
+        
+
+    </p>
+     
+
+
+
+</body>
+</html>

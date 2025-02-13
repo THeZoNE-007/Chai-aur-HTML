@@ -1,0 +1,7 @@
+body {
+    background-color: #414141;
+    color: #f6f6f6;
+}
+/* Above is styling in css targeting the body tag. The above won't work unless you add "<link rel="stylesheet" href="style.css">" line in the html (refer to line 6 in colors.html file) */
+
+/* In colors.html, you can see from line 6 to line 11, whether the linking to this style.css comes first or in-line style comes first decides what will be the colors (the one who is later is priority)  */
