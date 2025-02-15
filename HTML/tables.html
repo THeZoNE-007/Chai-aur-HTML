@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        /* We are targetting the table, td, th and tr tag in the in-line styling */
+        table {
+            /* width: 100%; This will expand the table according to the window's width */
+            border-collapse: collapse; /* The collapsing (don't show) is done because each individual cell also has its own border. Try commenting out this line and you can see the appearance of table as blocks of cells */
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            /* nth-child(even) will only color the even rows of tr to be colored */
+            background-color: #b9b9b9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Below custom table tag replaces the styling of width done above -->
+    <table style="width: 100%;">
+        <!-- tr -> Table Row -->
+        <tr>
+            <!-- th -> Table Heading -->
+            <!-- Note that th by default comes in bold which is because of the browser and not any HTML or CSS -->
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Country Email</th>
+        </tr>
+        <tr>
+            <!-- td -> Table data -->
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>United States of America</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>jp@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>cn@google.com</td>
+        </tr>
+    </table><br/>
+<!-- Above is top to bottom approach for making a table -->
+    <table>
+        <tr>
+            <th>Country</th>
+            <td>India</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <th>CODE</th>
+            <td>IN</td>
+            <td>JP</td>
+        </tr>
+    </table>
+<!-- Above is left to right approach for making a table -->
+</body>
+</html>
