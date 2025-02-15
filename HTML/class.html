@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <style>
+        .red {
+            /* we use .name for a class */
+            background-color: coral;
+        }
+
+        #green {
+            /* we use #name for an ID */
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- 2 Global properties: ID and Class 
+    Most people refer their work as only in CSS. But NO !
+    These are used to select the elements (target them) for let's say we can keep them as references in memory so later we can remove or add that element from our website in which these 2 come in handy -->
+    <p class="red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, inventore.</p> <!-- This is what we call targeting/selecting an element with class -->
+
+    <p id="green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, possimus!</p> <!-- This is what we call targeting/selecting an element with ID -->
+    <h1 class="red">Test 1</h1> <!-- Note: See how we can add the class attribute in a header. Always remember that this is for selecting/target purpose, not styling -->
+    <h3>Test 2</h3> <!-- h3 id="green" not allowed unlike class that is repeatable. Why ? See below note -->
+
+    <!-- Note: According to convention, id (the one in #) are never to be repeated with an element but classes are repeatable. But HTML wouldn't show an error as it's a convention. This has further importance for backend frameworks to use like JS, Angular React, etc. They even generate unique IDs to use and not use the same ID everywhere. -->
+
+    <table>
+        <tr>
+            <th>Country</th>
+            <td>India</td>
+            <td>Japan</td>
+            <td>Chai aur Code</td>
+        </tr>
+        <tr>
+            <th>CODE</th>
+            <td>IN</td>
+            <td>JP</td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7fjOw8ApZ1I?si=PIdBDGxXoYqGQE41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Copied it from youtube but this is an embedded link, not the usual share -->
+            </td>
+        </tr>
+    </table>
+
+    <!-- <iframe src="" frameborder="0"></iframe> Loads a different webpage/porton of a bigger page into your website. These are often unsafe for security issues like opening a malicious webpage by mistake, therefore used for things like maps or videos -->
+
+
+
+</body>
+</html>
