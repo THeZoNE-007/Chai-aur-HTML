@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms one</title>
+
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="" method="GET" accept-charset="UTF-8" autocomplete="off" enctype="" target="_blank"> <!--
+        GET -> Attaches your query with the url in clear text. If use POST, then too it'll go to server but you have to mention in action attribute where the info is going.-->
+        <label for="fname">First Name:</label><br> <!--Instead of just using the placeholder for the input area, it's a good practice to give a label since screen readers can't read the placeholders-->
+        <input type="text" placeholder="first name" name="" id="fname"><br/><br/>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" placeholder="last name" name="" id="lname"><br/><br/>
+
+        <!-- The id attribute in the above tag can be linked with the for attribute in label tag so that clicking on the label will highlight the fill box for user to know -->
+
+        <button type="submit">Submit / Pay</button>
+
+    </form>
+    
+</body>
+</html>
