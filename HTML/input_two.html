@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms one</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="" method="GET" accept-charset="UTF-8" autocomplete="off" enctype="" target="">
+
+        <label for="fname">Name:</label>
+        <input type="text" placeholder="name" name="" value="hitesh" id="fname"><br>
+        
+        <label for="pwd">Password:</label>
+        <input type="password" name="" id="pwd"><br>
+        
+        <label for="week">Week:</label>
+        <input type="week" name="" id="week"><br><br>
+
+        <input type="reset" value="reset"><br><br>
+
+<!-- Above are some of many type attributes of input tag -->
+
+        <select name="editors" id="" multiple>
+            <option value="vscode">VScode</option>
+            <option value="sublime">Sublime</option>
+        </select><br><br>
+
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="vscode">VScode</option>
+            <option value="sublime">Sublime</option>
+        </datalist>
+<!-- Both select and datalist work the same but datalist is rarely used in constrast to select -->
+
+        <input type="hidden" name="">
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
